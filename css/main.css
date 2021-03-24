@@ -1,0 +1,61 @@
+
+html{
+  box-sizing: border-box;
+  font-family: "Courier New",sans-serif;
+  line-height: 1.4;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+img{
+  min-width: 100%;
+  min-height: 100%;
+}
+#container{
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  grid-template-rows: 15vh 30vh 40vh 10vh;
+  grid-gap:10px;
+}
+#container .cabecera{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  color: #fff;
+  background: #00a1ff;
+  align-content: center;
+}
+#container .cartell{
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.cartell{
+  height:100%;
+}
+#container .logo{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.logo{
+  width: auto;
+  height: 100%;
+}
+#container .text{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background: green;
+  text-align: left;
+  align-items: center;
+}
+.footer{
+  grid-column: 1/3;
+  grid-row: 4/5;
+  background: #00a1ff;
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
